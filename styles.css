@@ -6,7 +6,6 @@
     --black: #28283D;
     --gray: #87879D;
     --gray25: #87879d50;
-
     --white: #FAFAFA;
 
     --ff-primary: 'Red Hat Display', sans-serif;
@@ -99,7 +98,6 @@ header {
     display: inline-block;
     margin: 0.5em auto;    
     font-weight: var(--fw-black);
-
 }
 
 .btn-primary {
@@ -122,7 +120,6 @@ header {
     opacity: .7;
 }
 
-
 .count {
     font-size: 1rem;
     color: var(--gray);
@@ -134,7 +131,7 @@ header {
     border-radius: 50%;
     display: grid;
     place-content: center;
-    margin: 10em auto 5em auto;
+    margin: 8em auto 5em auto;
     position: relative;
     background-color: #fff;
     z-index: 500
@@ -150,8 +147,8 @@ WITH A PSUEDO BEFORE & POSITIONING */
     background-color: var(--gray25);
     margin: 0 auto;
     position: absolute;
-    left: 50%;
-    bottom: 3em;
+    left: 50%; /*centers*/
+    bottom: 3em; /* account for height of parent div */
 }
 
 .image-group {
@@ -198,8 +195,6 @@ footer {
     /* created color overlay! */
     box-shadow: inset 0 0 0 1000px #4d97a9e1;
     margin-top: -6.5em;
-    
-
 }
 
 .text-headline2-light {
@@ -217,6 +212,70 @@ footer {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
-
 }
 
+/* == TABLET == */
+/* == TABLET == */
+
+@media (min-width: 48em){
+
+
+    .text-headline1 {
+        font-size: 3rem;
+        line-height: 1em;
+        max-width: 7em;
+        margin: 0 auto 0.5em auto;
+    }
+
+    .text-body {
+        max-width: 28.75em;
+        margin: 0 auto 0.5em auto;
+    }
+
+    .call-to-action {
+        display:inline;
+    }
+
+    .btn {
+        margin: 1em .5em;    
+    }
+    
+    .image-group {
+        gap: 0.75em;
+    }
+
+    .photo {
+        width: 20%;
+    }
+
+    .text-headline2 {
+        font-size: 2.5rem;
+        line-height: 1.125em;
+        max-width: 11.25em;
+        margin: 0 auto 1em auto;
+    }
+
+    .text-headline2-light {
+        font-size: 2.5rem;
+        line-height: 1.125em;
+        max-width: 11.25em;
+        margin: 0 auto 1em auto;
+    }
+    
+    .text-body-light {
+        max-width: 32.5em;
+        margin: 0 auto 1em auto;
+    }
+}
+
+/* == DESKTOP == */
+/* == DESKTOP == */
+
+@media (min-width: 90em) {
+
+    .hero-image-tablet {
+        display: none;
+    }
+
+
+}
