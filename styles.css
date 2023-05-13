@@ -5,6 +5,8 @@
     --lightpurple: #D9B8FF;
     --black: #28283D;
     --gray: #87879D;
+    --gray25: #87879d50;
+
     --white: #FAFAFA;
 
     --ff-primary: 'Red Hat Display', sans-serif;
@@ -101,10 +103,42 @@ header {
     /* display: flex;
     flex-direction: column; */
 }
+
 .btn {
     background-color: #D9B8FF;
     padding: 1em 2.5em;
     border-radius: 10em;
     color: var(--white);
     display: block;
+}
+
+.count {
+    font-size: 1rem;
+    color: var(--gray);
+    font-weight: var(--fw-black);
+    height: 1em;
+    width: 1em;
+    border: 1px solid var(--gray25);
+    padding: 1.5em;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.divider {
+    margin: 10em auto;
+}
+
+.count::before {
+    content: '';
+    width: 1px;
+    height: 6em;
+    background-color: var(--gray25);
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: 3em;
+   
 }
