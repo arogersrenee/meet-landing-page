@@ -123,14 +123,13 @@ header {
     border-radius: 50%;
     display: grid;
     place-content: center;
-    margin: 0 auto;
+    margin: 10em auto 5em auto;
     position: relative;
 }
 
-.divider {
-    margin: 10em auto;
-}
-
+/* LEARNED HOW TO CREATE 
+THE HORIZONTAL ALIGNMENT 
+WITH A PSUEDO BEFORE & POSITIONING */
 .count::before {
     content: '';
     width: 1px;
@@ -140,5 +139,17 @@ header {
     position: absolute;
     left: 50%;
     bottom: 3em;
-   
+}
+
+.image-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.photo {
+    width: 40%;
+    border-radius: 0.5em;
+    justify-content: space-between;
 }
