@@ -87,8 +87,8 @@ header {
 
 .call-to-action {
     margin-top: 2em;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 .btn {
@@ -96,8 +96,32 @@ header {
     padding: 1em 2.5em;
     border-radius: 10em;
     color: var(--white);
-    display: block;
+    display: inline-block;
+    margin: 0.5em auto;    
+    font-weight: var(--fw-black);
+
 }
+
+.btn-primary {
+    background-color: var(--teal);
+}
+
+.btn-primary:hover {
+    background-color: #71C0D4;
+}
+
+.btn-secondary {
+    background-color: var(--purple);
+}
+
+.btn-secondary:hover {
+    background-color: #B18BDD;
+}
+
+.version {
+    opacity: .7;
+}
+
 
 .count {
     font-size: 1rem;
@@ -113,6 +137,7 @@ header {
     margin: 10em auto 5em auto;
     position: relative;
     background-color: #fff;
+    z-index: 500
 }
 
 /* LEARNED HOW TO CREATE 
@@ -172,6 +197,7 @@ footer {
     background-size: cover;
     /* created color overlay! */
     box-shadow: inset 0 0 0 1000px #4d97a9e1;
+    margin-top: -6.5em;
     
 
 }
@@ -181,7 +207,6 @@ footer {
     color: var(--white);
     font-size: 2rem;
     line-height: 1em;
-    margin-bottom: 1em;
 }
 
 .text-body-light {
@@ -190,5 +215,8 @@ footer {
     font-size: 1rem;
     line-height: 1.625em;
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
 }
 
