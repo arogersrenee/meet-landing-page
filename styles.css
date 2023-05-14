@@ -266,6 +266,11 @@ footer {
         max-width: 32.5em;
         margin: 0 auto 1em auto;
     }
+
+    footer {
+        background-image: url(assets/tablet/image-footer.jpg);
+        padding: 8em 2em;
+    }
 }
 
 /* == DESKTOP == */
@@ -275,6 +280,42 @@ footer {
 
     .hero-image-tablet {
         display: none;
+    }
+
+    .hero {
+        background-image: url(assets/desktop/image-hero-left.png), url(assets/desktop/image-hero-right.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: center left, center right;
+        padding: 2em;
+    }
+
+    .text-headline1 {
+        font-size: 4rem;
+        line-height: 1em;
+        min-width: 7em;
+        margin: 0 auto 0.5em auto;
+    }
+
+    .text-body {
+        font-size: 1.125rem;
+        line-height: 1.5em;
+    }
+
+    footer {
+        background-image: url(assets/desktop/image-footer.jpg);
+        padding: 6em 2em;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        justify-content: center;
+    }
+
+    .text-headline2-light,
+    .text-body-light {
+        text-align: left;
     }
 
 
