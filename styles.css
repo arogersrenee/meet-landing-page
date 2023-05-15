@@ -319,9 +319,8 @@ footer {
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center; /* fixed button size */
+      
+        
     }
 
     .text-headline2-light,
@@ -329,5 +328,15 @@ footer {
         text-align: left;
     }
 
-
+    .footer-container {
+          display: flex;
+        justify-content: center;
+        align-items: center; /* fixed button size */
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 3em;
+    }
+    .btn {
+        min-width: fit-content;
+    }
 }
