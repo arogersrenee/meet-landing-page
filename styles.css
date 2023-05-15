@@ -319,9 +319,8 @@ footer {
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
-        display: grid;
-        /* display: flex;
-        justify-content: center; */
+        display: flex;
+        justify-content: center;
     }
 
     .text-headline2-light,
