@@ -311,7 +311,7 @@ footer {
         gap: 2em;
     }
 
-    /* !!! GRID/FLEX ISN'T LOOKING RIGHT. BUTTON TAKES UP FULL COLUMN !!! */
+    /* !!!Fix column widths !!! */
 
     footer {
         background-image: url(assets/desktop/image-footer.jpg);
@@ -321,6 +321,7 @@ footer {
         background-position: center;
         display: flex;
         justify-content: center;
+        align-items: center; /* fixed button size */
     }
 
     .text-headline2-light,
